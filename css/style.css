@@ -14,9 +14,21 @@ body {
     color: #333333;
 }
 
+
+.container{
+    width: 80%
+}
+
+.right{
+    width: 20%;
+}
+
+/*шапка*/
+
 header{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .logo{
@@ -73,14 +85,153 @@ header{
     transition: width .3s ease-in-out;
 }
 
-a:hover:after,
+.menu a:hover:after,
 a:focus:after {
     width: 100%;
 }
 
+/*Выше header*/
+/*ниже основной контент*/
 
-main{
-    width: 100%;
-    height: 100%;
+.slider-1{
+    display: flex;
+    flex-direction: column;
 }
 
+.slider-1 .pictures{
+    display: flex;
+    justify-content: center;
+}
+
+.pictures .pictures-left{
+    display: flex;
+    position: relative;
+}
+
+.pictures-left h2 {
+    position: absolute;
+    top: 248px;
+    left: 60px;
+    width: 100%;
+    }
+.pictures-left h2 span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    background: inherit;
+    padding: 10px;
+    }
+
+.pictures-left .btn-sld{
+    border: 1px solid #fff; 
+    text-decoration: none;
+    position: absolute;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 393px;
+    left: 70px;
+    background-color: inherit ;
+}
+
+.pictures-left .btn-sld span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.pictures .pictures-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16.58px;
+}
+
+.pictures-right .btn-sld2{
+    border: 1px solid #fff; 
+    text-decoration: none;
+    position: absolute;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 160px;
+    left: 30px;
+    background-color: inherit ;
+}
+
+.pictures-right .btn-sld2 span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.pictures-right .btn-sld3{
+    border: 1px solid #fff; 
+    text-decoration: none;
+    position: absolute;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 411px;
+    left: 30px;
+    background-color: inherit ;
+}
+
+.pictures-right .btn-sld3 span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.radio-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:40px;
+}
+
+.radio-btn input {
+  display: none;
+}
+.radio-btn label {
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  border: 1px solid #4F4F4F;
+  background: #fff;
+  cursor: pointer;
+  margin-right: 13px;
+}
+#button1:checked ~ #hw1,
+#button2:checked ~ #hw2,
+#button3:checked ~ #hw3,
+#button4:checked ~ #hw4 {
+  background: #4F4F4F;
+}
